@@ -182,7 +182,7 @@ var allImages = {
     "vistaprint": [
         "studio.jpg"
     ],
-    "postscript-worklife-balance": [
+    "postscript-work-life-balance": [
         "den-rock.jpg",
         "rumney2.jpg",
         "pemi.jpg",
