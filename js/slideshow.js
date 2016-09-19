@@ -1,41 +1,72 @@
-$(document).ready(function() {
-    setTimeout(function() {
-        $("img.tl-media-item").each(function(index, img) {
-            var slideId = $($(img).closest(".tl-slide")).attr('id');
-            $(img).data("slide-id", slideId);
-            $(img).data("image-index", 0);
+// $(document).ready(function() {
+//     setTimeout(function() {
+//         $("img.tl-media-item").each(function(index, img) {
+//             var slideId = $($(img).closest(".tl-slide")).attr('id');
+//             $(img).data("slide-id", slideId);
+//             $(img).data("image-index", 0);
 
-            var next = $('<div id="' + slideId + '-next" class="slideshow-next">&nbsp;</div>');
-            var prev = $('<div id="' + slideId + '-prev" class="slideshow-prev">&nbsp;</div>');
-            $(img).after(prev);
-            $(prev).after(next);
+//             var next = $('<div id="' + slideId + '-next" class="slideshow-next">&nbsp;</div>');
+//             var prev = $('<div id="' + slideId + '-prev" class="slideshow-prev">&nbsp;</div>');
+//             $(img).after(prev);
+//             $(prev).after(next);
 
-            setArrowPositions(prev, next, img);
+//             setArrowPositions(prev, next, img);
 
-            $(prev).on("click", function() {
-                changeImage(img, "prev");
-            });
+//             $(prev).on("click", function() {
+//                 changeImage(img, "prev");
+//             });
 
-            $(next).on("click", function() {
-                changeImage(img, "next");
-            });
+//             $(next).on("click", function() {
+//                 changeImage(img, "next");
+//             });
 
-            $(window).resize(function() {
-                setArrowPositions(prev, next, img);
-            });
+//             $(window).resize(function() {
+//                 setArrowPositions(prev, next, img);
+//             });
 
-            $(img).on("load", function() {
-                setArrowPositions(prev, next, img);
-            });
+//             $(img).on("load", function() {
+//                 setArrowPositions(prev, next, img);
+//             });
+//         });
+
+//         // TODO: 
+//         //  Only show arrows when hovering over image
+//         //  Animate image transition
+
+
+//     }, 10000);
+// });
+
+var initializeSlideshow = function() {
+    $("img.tl-media-item").each(function(index, img) {
+        var slideId = $($(img).closest(".tl-slide")).attr('id');
+        $(img).data("slide-id", slideId);
+        $(img).data("image-index", 0);
+
+        var next = $('<div id="' + slideId + '-next" class="slideshow-next">&nbsp;</div>');
+        var prev = $('<div id="' + slideId + '-prev" class="slideshow-prev">&nbsp;</div>');
+        $(img).after(prev);
+        $(prev).after(next);
+
+        setArrowPositions(prev, next, img);
+
+        $(prev).on("click", function() {
+            changeImage(img, "prev");
         });
 
-        // TODO: 
-        //  Only show arrows when hovering over image
-        //  Animate image transition
+        $(next).on("click", function() {
+            changeImage(img, "next");
+        });
 
+        $(window).resize(function() {
+            setArrowPositions(prev, next, img);
+        });
 
-    }, 10000);
-});
+        $(img).on("load", function() {
+            setArrowPositions(prev, next, img);
+        });
+    });
+};
 
 var setArrowPositions = function(prev, next, img) {
     var imageContainer = $(img).parent()[0];
@@ -113,7 +144,7 @@ var allImages = {
         "back_river-arial.jpg",
         "blithewood.jpg",
         "bcsq.jpg",
-        "bard-sirens.jpg",
+        "bard_sirens.jpg",
         "milkshake.jpg",
         "nudity.jpg",
         "dq.jpg",
@@ -141,24 +172,23 @@ var allImages = {
     "cmes": [
         "38_kirkland.jpg",
         "cmes-rally.jpg",
-        "snowflakes.jpg"
+        "snowflakes.JPG"
     ],
     "learning-2-code": [
         "extension-school.jpg",
-        "dream-campaign.jpg",
-        "tcs-board.jpg"
+        "dream-campaign.png",
+        "tcs_board.jpg"
     ],
     "vistaprint": [
         "studio.jpg"
     ],
     "postscript-worklife-balance": [
-        "rumney.jpg",
         "den-rock.jpg",
+        "rumney.jpg",
         "pemi.jpg",
-        "glacier.jpg",
+        "glacier.JPG",
         "juniper.jpg",
         "juniper2.jpg",
-        "juniper3.jpg",
-        "juniper4.jpg"
-    ],
+        "juniper3.jpg"
+    ]
 };
