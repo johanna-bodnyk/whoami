@@ -81,16 +81,32 @@ var allImages = {
         "family-thanksgiving.jpg"
     ],
     "mom-meets-beth": [
-        "mom-and-beth.jpg",
+        "mom-and-beth.JPG",
         "babies.jpg",
         "dress-up.jpg",
         "outside.jpg",
         "twins.jpg",
         "camping.jpg",
+        "highschool.jpg",
         "grownup.jpg"
     ],
-    "the-circle-school-opens": [],
-    "the-founders-visit-svs": [],
+    "the-circle-school-opens": [
+        "tcs-opens.jpg",
+        "circletime.jpg",
+        "campout.jpg",
+        "gamesday.jpg",
+        "beth.jpg",
+        "sue.jpg",
+        "tuli.jpg"
+    ],
+    "the-founders-visit-svs": [
+        "91-92.jpg",
+        "92-93.jpg",
+        "93-94.jpg",
+        "backpacking.jpg",
+        "highschool-graduation.jpg",
+        "graduation-lucas.jpg"
+    ],
     "bard-college": [],
     "pennsylvania-again": [],
     "to-boston": [],
