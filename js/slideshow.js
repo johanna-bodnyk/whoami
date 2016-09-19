@@ -77,12 +77,17 @@ var allImages = {
         "baby-catherine.jpg",
         "cantalope.jpg",
         "julias-wedding.jpg",
-        "mom-and-mj.jpg",
+        "mom-and-mj.JPG",
         "family-thanksgiving.jpg"
     ],
     "mom-meets-beth": [
-        "https://raw.githubusercontent.com/johanna-bodnyk/whoami/master/photos/climbing_den-rock.jpg",
-        "http://placekitten.com/500/300"
+        "mom-and-beth.jpg",
+        "babies.jpg",
+        "dress-up.jpg",
+        "outside.jpg",
+        "twins.jpg",
+        "camping.jpg",
+        "grownup.jpg"
     ],
     "the-circle-school-opens": [],
     "the-founders-visit-svs": [],
