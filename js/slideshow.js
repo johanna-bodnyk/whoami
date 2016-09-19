@@ -93,6 +93,7 @@ var allImages = {
     "the-circle-school-opens": [
         "tcs-opens.jpg",
         "circletime.jpg",
+        "grange.jpg",
         "campout.jpg",
         "gamesday.jpg",
         "beth.jpg",
@@ -107,13 +108,57 @@ var allImages = {
         "highschool-graduation.jpg",
         "graduation-lucas.jpg"
     ],
-    "bard-college": [],
-    "pennsylvania-again": [],
-    "to-boston": [],
-    "weymouth-design": [],
-    "sherman-cafe": [],
-    "cmes": [],
-    "learning-2-code": [],
-    "vistaprint": [],
-    "postscript-worklife-balance": [],
+    "bard-college": [
+        "ps-stone-row.jpg",
+        "back_river-arial.jpg",
+        "blithewood.jpg",
+        "bcsq.jpg",
+        "bard-sirens.jpg",
+        "milkshake.jpg",
+        "nudity.jpg",
+        "dq.jpg",
+        "with-laura.jpg",
+        "with-lydia.jpg",
+        "bard_sirens-at-10-years.jpg"
+    ],
+    "pennsylvania-again": [
+        "circle-school-front-400px.jpg",
+        "smokies.jpg",
+        "25th-cake.jpg"
+    ],
+    "to-boston": [
+        "princesses.jpg",
+        "smores.jpg"
+    ],
+    "weymouth-design": [
+        "childrens-museum.jpg"
+    ],
+    "sherman-cafe": [
+        "sherman.jpg",
+        "sherman-inside.jpg",
+        "scones.jpg"
+    ],
+    "cmes": [
+        "38-kirkland.jpg",
+        "cmes-rally.jpg",
+        "snowflakes.jpg"
+    ],
+    "learning-2-code": [
+        "extension-school.jpg",
+        "dream-campaign.jpg",
+        "tcs-board.jpg"
+    ],
+    "vistaprint": [
+        "studio.jpg"
+    ],
+    "postscript-worklife-balance": [
+        "rumney.jpg",
+        "den-rock.jpg",
+        "pemi.jpg",
+        "glacier.jpg",
+        "juniper.jpg",
+        "juniper2.jpg",
+        "juniper3.jpg",
+        "juniper4.jpg"
+    ],
 };
