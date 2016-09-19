@@ -34,7 +34,7 @@ $(document).ready(function() {
         //  Animate image transition
 
 
-    }, 3000);
+    }, 10000);
 });
 
 var setArrowPositions = function(prev, next, img) {
@@ -139,7 +139,7 @@ var allImages = {
         "scones.jpg"
     ],
     "cmes": [
-        "38-kirkland.jpg",
+        "38_kirkland.jpg",
         "cmes-rally.jpg",
         "snowflakes.jpg"
     ],
