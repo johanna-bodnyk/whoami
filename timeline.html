@@ -1,9 +1,29 @@
-<<!DOCTYPE html>
 <html>
 <head>
     <title>Timeline</title>
+    <link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+    <link rel="stylesheet" href="css/slideshow.css">
+    <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+    <link href="https://cdn.knightlab.com/libs/timeline3/latest/css/fonts/font.default.css?2.24" rel="stylesheet" class="lazyload" charset="utf-8">
 </head>
 <body>
-<iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1GWdGPH_PzrTYcMycyb7_70LoDcJf3xMbbKy68oFRP4k&font=Default&lang=en&hash_bookmark=true&initial_zoom=2' width='100%' height='100%' frameborder='0'></iframe>
+    <div id='timeline-embed' style="width: 100%; height: 100%"></div>
+
+    <script type="text/javascript">
+      // The TL.Timeline constructor takes at least two arguments:
+      // the id of the Timeline container (no '#'), and
+      // the URL to your JSON data file or Google spreadsheet.
+      // the id must refer to an element "above" this code,
+      // and the element must have CSS styling to give it width and height
+      // optionally, a third argument with configuration options can be passed.
+      // See below for more about options.
+      var options = {
+
+      };
+      timeline = new TL.Timeline('timeline-embed',
+        'https://docs.google.com/spreadsheets/d/1GWdGPH_PzrTYcMycyb7_70LoDcJf3xMbbKy68oFRP4k/pubhtml', options);
+    </script>
+    <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+    <script src="js/slideshow.js"></script>
 </body>
 </html>
