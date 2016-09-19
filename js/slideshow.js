@@ -184,7 +184,7 @@ var allImages = {
     ],
     "postscript-worklife-balance": [
         "den-rock.jpg",
-        "rumney.jpg",
+        "rumney2.jpg",
         "pemi.jpg",
         "glacier.JPG",
         "juniper.jpg",
